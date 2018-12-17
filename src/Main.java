@@ -41,7 +41,7 @@ public class Main {
             items.remove(i);
             if (backpack.getWeight() <= allowedWeight) {
                 // Weight is ok
-                if (backpack.getValue() >= maxValue) {
+                if (backpack.getValue() > maxValue) {
                     maxValue = backpack.getValue();
                     maxWeight = backpack.getWeight();
                     maxBackpack = backpack.toString();
